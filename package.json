@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "host": "vite --host",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -24,6 +24,6 @@
     "scss": "^0.2.4",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
-    "vue-tsc": "^2.0.6"
+    "vue-tsc": "^2.0.20"
   }
 }

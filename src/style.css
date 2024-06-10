@@ -1,79 +1,92 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* Global font stuff */
+  font-family: 'Noto Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 body {
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.card {
-  padding: 2em;
 }
 
 #app {
-  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+.card:not(img) {
+  background-color: var(--card-color);
+  border-radius: 8px;
+  padding: 16px 24px;
+  margin: 16px;
+}
+
+img.card {
+  display: block;
+  border-radius: 8px;
+  margin: 0 auto;
+  height: auto;
+  box-shadow: 0 0 0 0 var(--primary-color);
+  transition: transform 0.15s, box-shadow 0.25s;
+  transition-timing-function: ease-out;
+  transition-delay: 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 9.5px 1px var(--primary-color);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img.card {
+    max-width: 90%;
+  }
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.secondary {
+  color: var(--secondary-color);
+}
+
+.secondary-text {
+  color: var(--secondary-text-color);
+}
+
+.center {
   text-align: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.bold {
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 16px;
 }
