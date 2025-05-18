@@ -5,7 +5,7 @@
         <a href="https://www.instagram.com/dispuutebriusvespertina/" target="_blank" rel="noopener noreferrer">
           <img src="/instagram-icon.webp" alt="Instagram" />
         </a>
-        <a href="mailto:ebriusvespertina@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:info@ebriusvespertina.nl" target="_blank" rel="noopener noreferrer">
           <img src="/email-icon.webp" alt="Email" />
         </a>
         <a href="https://svindicium.nl/dispuut" target="_blank" rel="noopener noreferrer">
@@ -14,7 +14,7 @@
       </div>
       <div class="copyright">
         <img src="/logo-bw-200w.png" alt="Dispuut Ebrius Vespertina" />
-        <span> &copy; 2024 Dispuut Ebrius Vespertina.</span>
+        <span> &copy; 2025 Dispuut Ebrius Vespertina.</span>
         <img src="/logo-bw-200w.png" alt="Dispuut Ebrius Vespertina" />
       </div>
     </footer>

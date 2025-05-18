@@ -10,7 +10,7 @@
         <ul>
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/over-ons">Over ons</router-link></li>
-          <a href="mailto:ebriusvespertina@gmail.com" target="_blank" rel="noopener noreferrer"> Contact </a>
+          <a href="mailto:info@ebriusvespertina.nl" target="_blank" rel="noopener noreferrer"> Contact </a>
         </ul>
       </nav>
     </header>
