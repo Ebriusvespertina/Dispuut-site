@@ -20,12 +20,13 @@
       <span class="bold" style="font-size: 1.25rem"
         >Dispuut <span class="secondary bold">Ebrius</span> <span class="primary">Vespertina </span></span
       >
-      <div style="display: inline-block; font-size: 0.75rem">( D.E.V. )</div> is een gemengd dispuut dat aangesloten zit bij Indicium. Het dispuut is een hechte vrienden groep waar
-      elke jaar een nieuwe jaarlage bij komt. Als groepering proberen we ervoor te zorgen dat wij het studenten leven op
-      zoeken door elke maand activiteiten te houden voor onze leden onder het genot van een drankje. Elk jaar zal het
-      dispuut als groep ook op vakantie gaan, een kennismakingskamp om de nieuwe leden te ontmoeten en vieren we onze
-      verjaardag uitgebereid. De vrienden die je hier maakt worden vrienden voor het leven en lid van dit Dispuut zal je
-      voor de rest van je leven blijven.
+      <div style="display: inline-block; font-size: 0.75rem">( D.E.V. )</div> is een gemengd dispuut dat gelieerd is aan
+      Indicium.<br/><br/>Het dispuut is een hechte vrienden groep waar
+      elk jaar een nieuwe jaarlaag bij komt. Als groepering zoeken wij het studenten leven op
+      door elke maand een activiteit te organiseren voor onze leden, vaak onder het genot van een drankje.<br/><br/>Elk jaar zal het
+      dispuut op vakantie gaan, een kennismakingskamp organiseren om nieuwe leden te ontmoeten, en uitgebreid onze
+      verjaardag vieren. De vrienden die je hier maakt worden vrienden voor het leven en lid van dit Dispuut zal je
+      voor altijd blijven.
     </p>
   </Container>
 </template>
