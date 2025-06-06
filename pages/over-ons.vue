@@ -1,5 +1,5 @@
 <template>
-  <Container>
+  <div>
     <img
       class="rounded card"
       src="/logo-dev.svg"
@@ -54,9 +54,12 @@
         bijstaan. Voor meer informatie of om lid te worden, kun je contact met ons opnemen via de mail.
       </p>
     </div>
-  </Container>
+  </div>
 </template>
 
 <script setup lang="ts">
-import Container from '@/components/Container.vue';
+// Set page title
+useHead({
+  title: 'Over ons - Dispuut Ebrius Vespertina',
+});
 </script>

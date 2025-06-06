@@ -2,14 +2,14 @@
   <div class="header-container">
     <header class="header">
       <div class="logo">
-        <router-link to="/">
+        <NuxtLink to="/">
           <img src="/logo-dev.svg" alt="Dispuut Ebrius Vespertina" />
-        </router-link>
+        </NuxtLink>
       </div>
       <nav class="nav">
         <ul>
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/over-ons">Over ons</router-link></li>
+          <li><NuxtLink to="/">Home</NuxtLink></li>
+          <li><NuxtLink to="/over-ons">Over ons</NuxtLink></li>
           <a href="mailto:info@ebriusvespertina.nl" target="_blank" rel="noopener noreferrer"> Contact </a>
         </ul>
       </nav>
