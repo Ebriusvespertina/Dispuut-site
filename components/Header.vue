@@ -3,15 +3,7 @@
     <header class="header">
       <div class="logo">
         <NuxtLink to="/">
-          <NuxtImg
-            src="/logo-dev.svg"
-            alt="Dispuut Ebrius Vespertina"
-            width="40"
-            height="40"
-            format="webp"
-            quality="90"
-            sizes="40px"
-          />
+          <NuxtImg src="/logo-dev.svg" alt="Dispuut Ebrius Vespertina" width="40" height="40" sizes="40px" />
         </NuxtLink>
       </div>
       <nav class="nav">
