@@ -60,7 +60,6 @@ export default defineNuxtConfig({
       xl: 1280,
     },
     domains: ['svindicium.nl', 'indicium.nl'],
-    dir: 'assets/images',
   },
 
   // Performance optimizations
