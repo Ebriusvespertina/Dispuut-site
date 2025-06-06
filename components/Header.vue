@@ -3,14 +3,22 @@
     <header class="header">
       <div class="logo">
         <NuxtLink to="/">
-          <img src="/logo-dev.svg" alt="Dispuut Ebrius Vespertina" />
+          <NuxtImg
+            src="/logo-dev.svg"
+            alt="Dispuut Ebrius Vespertina"
+            width="40"
+            height="40"
+            format="webp"
+            quality="90"
+            sizes="40px"
+          />
         </NuxtLink>
       </div>
       <nav class="nav">
         <ul>
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/over-ons">Over ons</NuxtLink></li>
-          <a href="mailto:info@ebriusvespertina.nl" target="_blank" rel="noopener noreferrer"> Contact </a>
+          <li><a href="mailto:info@ebriusvespertina.nl" target="_blank" rel="noopener noreferrer">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -49,6 +57,9 @@
   height: 2.5em;
   width: 2.5em;
   transform: scale(1.75);
+  /* GPU acceleration to prevent forced reflows */
+  will-change: transform, filter;
+  backface-visibility: hidden;
 
   &:hover {
     filter: grayscale(20%);

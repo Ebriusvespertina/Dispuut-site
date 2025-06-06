@@ -8,13 +8,18 @@
         <span class="primary">Vespertina</span>
       </div>
     </h1>
-    <img
+    <NuxtImg
       class="rounded card"
       src="/dispuut-bier.webp"
       alt="Dispuut Ebrius Vespertina"
-      width="666.67"
-      height="476.19"
+      width="667"
+      height="476"
+      format="webp"
+      quality="80"
+      sizes="sm:100vw md:80vw lg:60vw xl:50vw"
       style="margin-bottom: 16px"
+      loading="eager"
+      preload
     />
     <div class="card" style="text-align: justify">
       <p>
