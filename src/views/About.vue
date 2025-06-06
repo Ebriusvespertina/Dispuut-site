@@ -29,17 +29,25 @@
         onze leden, altijd onder het genot van een drankje.
       </p>
       <p></p>
-      <ul>
-        <b>Activiteiten:</b>
-        Maandelijks organiseren we diverse activiteiten om onze band te versterken en plezier te maken. Van gezellige
-        borrels tot uitdagende sportevenementen, er is voor ieder wat wils.
-        <br /><b>Jaarlijkse Hoogtepunten:</b>
-        Elk jaar gaan we als groep op vakantie en organiseren we een kennismakingskamp om nieuwe leden te verwelkomen.
-        Daarnaast vieren we onze verjaardag uitgebreid met allerlei festiviteiten.
-        <br /><b>Vriendschap voor het Leven:</b>
-        De vriendschappen die binnen D.E.V. ontstaan, zijn voor het leven. Lid zijn van dit dispuut betekent dat je deel
-        uitmaakt van een gemeenschap die je de rest van je leven zal blijven koesteren.
-      </ul>
+      <section>
+        <h3>Activiteiten</h3>
+        <p>
+          Maandelijks organiseren we diverse activiteiten om onze band te versterken en plezier te maken. Van gezellige
+          borrels tot uitdagende sportevenementen, er is voor ieder wat wils.
+        </p>
+
+        <h3>Jaarlijkse Hoogtepunten</h3>
+        <p>
+          Elk jaar gaan we als groep op vakantie en organiseren we een kennismakingskamp om nieuwe leden te verwelkomen.
+          Daarnaast vieren we onze verjaardag uitgebreid met allerlei festiviteiten.
+        </p>
+
+        <h3>Vriendschap voor het Leven</h3>
+        <p>
+          De vriendschappen die binnen D.E.V. ontstaan, zijn voor het leven. Lid zijn van dit dispuut betekent dat je
+          deel uitmaakt van een gemeenschap die je de rest van je leven zal blijven koesteren.
+        </p>
+      </section>
 
       <p>
         Bij Dispuut Ebrius Vespertina draait alles om het opzoeken van het studentenleven en het smeden van
@@ -49,3 +57,7 @@
     </div>
   </Container>
 </template>
+
+<script setup lang="ts">
+import Container from '@/components/Container.vue';
+</script>

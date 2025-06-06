@@ -14,7 +14,7 @@ const router = createRouter({
     // and finally the default route, when none of the above matches:
     { name: 'Pagina niet gevonden', path: '/:pathMatch(.*)*', component: fof },
   ],
-  scrollBehavior: (to, from, savedPosition) => {
+  scrollBehavior: (_to, _from, savedPosition) => {
     return { top: savedPosition?.top ?? 0 };
   },
 });
@@ -23,7 +23,7 @@ const app = createApp(App);
 
 app.use(router);
 
-router.afterEach((to, from, falure) => {
+router.afterEach((to, _from, _failure) => {
   if (to.name) {
     document.title = 'Dispuut Ebrius Vespertina - ' + to.name.toString();
   }
