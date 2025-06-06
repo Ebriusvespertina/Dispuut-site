@@ -24,11 +24,11 @@ r
 
 <style scoped>
 .footer-container {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-bg-color);
   color: white;
   width: 100%;
   padding: 0.5rem 0;
-  box-shadow: 0 -2px 8px var(--background-color);
+  box-shadow: 0 -2px 8px var(--secondary-bg-color);
   margin-top: 2rem;
 }
 

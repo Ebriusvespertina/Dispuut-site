@@ -13,10 +13,12 @@ export default defineNuxtConfig({
   ssr: true,
 
   // CSS configuration
-  css: ['~/assets/css/main.css'],
-  // App configuration
+  css: ['~/assets/css/main.css'], // App configuration
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'nl',
+      },
       title: 'Dispuut Ebrius Vespertina',
       meta: [
         { charset: 'utf-8' },

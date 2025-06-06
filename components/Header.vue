@@ -10,7 +10,7 @@
         <ul>
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/over-ons">Over ons</NuxtLink></li>
-          <a href="mailto:info@ebriusvespertina.nl" target="_blank" rel="noopener noreferrer"> Contact </a>
+          <li><a href="mailto:info@ebriusvespertina.nl" target="_blank" rel="noopener noreferrer">Contact</a></li>
         </ul>
       </nav>
     </header>
