@@ -6,8 +6,6 @@
       alt="Dispuut Ebrius Vespertina"
       width="256"
       height="256"
-      format="webp"
-      quality="90"
       sizes="sm:256px md:256px lg:256px"
       style="
         margin: 24px auto auto;

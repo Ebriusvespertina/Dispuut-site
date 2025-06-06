@@ -9,7 +9,6 @@
             width="40"
             height="40"
             format="webp"
-            quality="80"
             sizes="40px"
             loading="lazy"
           />
@@ -21,7 +20,6 @@
             width="40"
             height="40"
             format="webp"
-            quality="80"
             sizes="40px"
             loading="lazy"
           />
@@ -33,8 +31,6 @@
             style="filter: brightness(0) invert(1)"
             width="40"
             height="40"
-            format="webp"
-            quality="80"
             sizes="40px"
             loading="lazy"
           />
@@ -47,7 +43,6 @@
           width="18"
           height="18"
           format="webp"
-          quality="80"
           sizes="18px"
           loading="lazy"
         />
@@ -58,7 +53,6 @@
           width="18"
           height="18"
           format="webp"
-          quality="80"
           sizes="18px"
           loading="lazy"
         />

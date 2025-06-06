@@ -36,6 +36,10 @@ export default defineNuxtConfig({
         { name: 'format-detection', content: 'telephone=no' },
       ],
       link: [
+        // Favicon configuration
+        { rel: 'icon', type: 'image/png', href: '/logo-bw-200w.png' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/logo-dev.svg' },
+        { rel: 'apple-touch-icon', href: '/logo-bw-200w.png' },
         // DNS prefetch for external resources
         { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
         { rel: 'dns-prefetch', href: '//svindicium.nl' },
@@ -45,19 +49,9 @@ export default defineNuxtConfig({
     },
   },
 
-  // Font optimization
-  fonts: {
-    google: {
-      families: {
-        'Noto Sans': [100, 200, 300, 400, 500, 600, 700, 800, 900],
-      },
-      display: 'swap',
-    },
-  },
-  // Image optimization
   image: {
     format: ['webp', 'avif'],
-    quality: 80,
+    quality: 90,
     screens: {
       xs: 320,
       sm: 640,
@@ -65,15 +59,8 @@ export default defineNuxtConfig({
       lg: 1024,
       xl: 1280,
     },
-    presets: {
-      avatar: {
-        modifiers: {
-          format: 'webp',
-          width: 50,
-          height: 50,
-        },
-      },
-    },
+    domains: ['svindicium.nl', 'indicium.nl'],
+    dir: 'assets/images',
   },
 
   // Performance optimizations
@@ -82,6 +69,6 @@ export default defineNuxtConfig({
   },
 
   typescript: {
-    typeCheck: false,
+    typeCheck: true,
   },
 });
