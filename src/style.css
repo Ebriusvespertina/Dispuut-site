@@ -61,9 +61,60 @@ img.card {
   }
 }
 
+/* Accessibility improvements */
+*:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Remove outline for mouse users */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Ensure good contrast for focus indicators */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .card:not(img) {
+    margin: 12px;
+    padding: 14px 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   img.card {
     max-width: 90%;
+  }
+
+  .card:not(img) {
+    margin: 8px;
+    padding: 12px 16px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card:not(img) {
+    margin: 4px;
+    padding: 10px 12px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
   }
 }
 
