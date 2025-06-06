@@ -11,7 +11,7 @@
       "
     />
     <h1 class="center">
-      Over dispuut
+      Over Dispuut
       <!-- This inline div groups the name for smaller screens -->
       <div style="display: inline-block">
         <span class="secondary">Ebrius </span>
@@ -21,12 +21,12 @@
 
     <div class="card">
       <p>
-        Dispuut Ebrius Vespertina (D.E.V.) is een gemengd dispuut dat is aangesloten bij Studievereniging Indicium. Ons
+        Dispuut Ebrius Vespertina (D.E.V.) is een gemengd dispuut dat is gelieerd aan Studievereniging Indicium. Ons
         dispuut vormt een hechte vriendengroep die elk jaar wordt uitgebreid met een nieuwe jaarlaag.
       </p>
       <p>
         Wij streven ernaar om het studentenleven volledig te omarmen door elke maand activiteiten te organiseren voor
-        onze leden, altijd onder het genot van een drankje.
+        onze leden, meestal onder het genot van een drankje.
       </p>
       <p></p>
       <section>
@@ -48,7 +48,6 @@
           deel uitmaakt van een gemeenschap die je de rest van je leven zal blijven koesteren.
         </p>
       </section>
-
       <p>
         Bij Dispuut Ebrius Vespertina draait alles om het opzoeken van het studentenleven en het smeden van
         onvergetelijke herinneringen. Sluit je aan bij ons en word deel van een groep vrienden die je altijd zal
