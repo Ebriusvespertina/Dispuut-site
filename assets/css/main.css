@@ -88,9 +88,12 @@ img.card {
     box-shadow 0.25s;
   transition-timing-function: ease-out;
   transition-delay: 0.2s;
+  /* GPU acceleration to prevent forced reflows */
+  will-change: transform, box-shadow;
+  transform: translateZ(0);
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) translateZ(0);
     box-shadow: 0 0 9.5px 1px var(--primary-color);
   }
 }

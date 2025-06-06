@@ -1,10 +1,14 @@
 <template>
   <div>
-    <img
+    <NuxtImg
       class="rounded card"
       src="/logo-dev.svg"
       alt="Dispuut Ebrius Vespertina"
       width="256"
+      height="256"
+      format="webp"
+      quality="90"
+      sizes="sm:256px md:256px lg:256px"
       style="
         margin: 24px auto auto;
         background-color: color-mix(in srgb, var(--primary-color) 60%, var(--background-color));

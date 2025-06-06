@@ -3,19 +3,65 @@
     <footer class="footer">
       <div class="social-media">
         <a href="https://www.instagram.com/dispuutebriusvespertina/" target="_blank" rel="noopener noreferrer">
-          <img src="/instagram-icon.webp" alt="Instagram" />
+          <NuxtImg
+            src="/instagram-icon.webp"
+            alt="Instagram"
+            width="40"
+            height="40"
+            format="webp"
+            quality="80"
+            sizes="40px"
+            loading="lazy"
+          />
         </a>
         <a href="mailto:info@ebriusvespertina.nl" target="_blank" rel="noopener noreferrer">
-          <img src="/email-icon.webp" alt="Email" />
+          <NuxtImg
+            src="/email-icon.webp"
+            alt="Email"
+            width="40"
+            height="40"
+            format="webp"
+            quality="80"
+            sizes="40px"
+            loading="lazy"
+          />
         </a>
         <a href="https://svindicium.nl/dispuut" target="_blank" rel="noopener noreferrer">
-          <img src="https://svindicium.nl/icon.svg" alt="Indicium" style="filter: brightness(0) invert(1)" />
+          <NuxtImg
+            src="https://svindicium.nl/icon.svg"
+            alt="Indicium"
+            style="filter: brightness(0) invert(1)"
+            width="40"
+            height="40"
+            format="webp"
+            quality="80"
+            sizes="40px"
+            loading="lazy"
+          />
         </a>
       </div>
       <div class="copyright">
-        <img src="/logo-bw-200w.png" alt="Dispuut Ebrius Vespertina" />
+        <NuxtImg
+          src="/logo-bw-200w.png"
+          alt="Dispuut Ebrius Vespertina"
+          width="18"
+          height="18"
+          format="webp"
+          quality="80"
+          sizes="18px"
+          loading="lazy"
+        />
         <span> &copy; 2025 Dispuut Ebrius Vespertina.</span>
-        <img src="/logo-bw-200w.png" alt="Dispuut Ebrius Vespertina" />
+        <NuxtImg
+          src="/logo-bw-200w.png"
+          alt="Dispuut Ebrius Vespertina"
+          width="18"
+          height="18"
+          format="webp"
+          quality="80"
+          sizes="18px"
+          loading="lazy"
+        />
       </div>
     </footer>
   </div>
