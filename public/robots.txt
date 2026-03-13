@@ -1,5 +1,2 @@
-User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://dispuut-ebrius-vespertina.web.app/sitemap.xml
+User-Agent: *
+Disallow:

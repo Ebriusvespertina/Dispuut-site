@@ -1,0 +1,30 @@
+/* Import other CSS files */
+@import "./animations.css";
+@import "./components.css";
+
+:root {
+  --primary-blue: #2b4c8c;
+  --primary-green: #3a5f3a;
+  --dark-bg: #1a1a1a;
+  --light-gray: #f5f5f5;
+  --text-light: #e0e0e0;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
