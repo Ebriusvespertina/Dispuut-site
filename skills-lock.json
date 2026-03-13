@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "skills": {
+    "nuxt": {
+      "source": "onmax/nuxt-skills",
+      "sourceType": "github",
+      "computedHash": "e814b473cac8105db33cbd6ddc5ac9d000faf4d4f3e28df4aa7a8113bb668f8e"
+    },
+    "nuxt-content": {
+      "source": "onmax/nuxt-skills",
+      "sourceType": "github",
+      "computedHash": "9d5e16da7f37310d26cebaec959dffd09679a37f7501fe1611af0a92a733336c"
+    },
+    "nuxt-seo": {
+      "source": "onmax/nuxt-skills",
+      "sourceType": "github",
+      "computedHash": "7cf2663b401426360699c0fe8f5f369e565191583c0d009ef64ebb412f17e163"
+    },
+    "pnpm": {
+      "source": "onmax/nuxt-skills",
+      "sourceType": "github",
+      "computedHash": "999ed1ace847ce7897ec596fa92630bafb3532b592956045a3915136499d6635"
+    },
+    "reka-ui": {
+      "source": "onmax/nuxt-skills",
+      "sourceType": "github",
+      "computedHash": "293d1660c244cbfe3136b66c3457f2a804a548e24557211d0a9f5cbe51e08d69"
+    },
+    "vite": {
+      "source": "onmax/nuxt-skills",
+      "sourceType": "github",
+      "computedHash": "bfce47b3705ca5d9ae2ac38f273b2a024f56c0ea8b75860d0b40cdb905cf235b"
+    },
+    "vue": {
+      "source": "onmax/nuxt-skills",
+      "sourceType": "github",
+      "computedHash": "30afec05f0f4127ab4d8789ee07d8b7b009edc5aa674d48ba30a7b6869c5e3f1"
+    },
+    "vueuse": {
+      "source": "onmax/nuxt-skills",
+      "sourceType": "github",
+      "computedHash": "ff9bc247f9a44c09839ae34c67128bf9fe297a505998c8285cb156816648e397"
+    }
+  }
+}

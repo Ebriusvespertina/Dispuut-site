@@ -1,70 +1,75 @@
-# Dispuut Ebrius Vespertina Website
+# Nuxt Minimal Starter
 
-Een moderne website voor Dispuut Ebrius Vespertina (D.E.V.), gebouwd met Vue 3, TypeScript en Vite.
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## ✨ Features
+## Setup
 
-- **Modern Stack**: Vue 3 met Composition API en TypeScript
-- **Responsive Design**: Optimaal voor alle apparaten
-- **SEO Geoptimaliseerd**: Meta tags en gestructureerde data
-- **Toegankelijk**: WCAG richtlijnen en toetsenbordnavigatie
-- **Firebase Hosting**: Gehost op Firebase voor snelle loading
-
-## 🚀 Development Setup
-
-### Vereisten
-
-- Node.js (versie 16 of hoger)
-- npm of yarn
-
-### Installatie
+Make sure to install dependencies:
 
 ```bash
-# Clone de repository
-git clone [repository-url]
-cd Dispuut-site
-
-# Installeer dependencies
+# npm
 npm install
 
-# Start development server
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
 npm run dev
 
-# Build voor productie
+# pnpm
+pnpm dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
 npm run build
 
-# Preview productie build
+# pnpm
+pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
 npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
 ```
 
-## 📁 Project Structuur
-
-```
-src/
-├── components/     # Herbruikbare componenten
-├── views/         # Pagina componenten
-├── assets/        # Statische assets
-├── style.css      # Globale styles
-└── main.ts        # App entry point
-```
-
-## 🛠 Aanbevolen Tools
-
-- [VS Code](https://code.visualstudio.com/)
-- [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) extensie
-- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
-
-## 📝 Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build voor productie
-- `npm run preview` - Preview productie build
-- `npm run lint` - Lint code met ESLint
-
-## 🌐 Deployed Website
-
-De website is beschikbaar op: [ebriusvespertina.nl](https://ebriusvespertina.nl/)
-
-## 📄 License
-
-Dit project is eigendom van Dispuut Ebrius Vespertina.
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
