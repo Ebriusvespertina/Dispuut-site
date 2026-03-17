@@ -6,9 +6,7 @@
       <nav class="desktop-nav" aria-label="Desktop navigatie">
         <ul class="desktop-list">
           <li v-for="item in navItems" :key="item.to">
-            <NuxtLink :to="item.to" class="desktop-link">{{
-              item.label
-            }}</NuxtLink>
+            <NuxtLink :to="item.to" class="desktop-link">{{ item.label }}</NuxtLink>
           </li>
         </ul>
       </nav>
@@ -28,9 +26,7 @@
             <DialogTitle class="sr-only">Navigatiemenu</DialogTitle>
 
             <div class="menu-top">
-              <NuxtLink to="/" class="brand" @click="closeMobileMenu"
-                >D.E.V.</NuxtLink
-              >
+              <NuxtLink to="/" class="brand" @click="closeMobileMenu">D.E.V.</NuxtLink>
               <DialogClose as-child>
                 <button class="close-button" aria-label="Sluit menu">✕</button>
               </DialogClose>
@@ -58,9 +54,8 @@
 const mobileMenuOpen = ref(false);
 const isScrolled = ref(false);
 
-const { data: siteNavigation } = await useAsyncData(
-  "site-navigation-main",
-  () => queryCollection("siteNavigation").first(),
+const { data: siteNavigation } = await useAsyncData("site-navigation-main", () =>
+  queryCollection("siteNavigation").first(),
 );
 
 const navItems = computed(() => siteNavigation.value?.mainNav || []);
@@ -91,24 +86,15 @@ onMounted(() => {
   right: 0;
   z-index: 1200;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: linear-gradient(
-    90deg,
-    rgba(16, 16, 16, 0.94),
-    rgba(26, 26, 26, 0.88)
-  );
-  backdrop-filter: blur(14px);
+  background: linear-gradient(90deg, rgba(16, 16, 16, 0.94), rgba(26, 26, 26, 0.88));
+  backdrop-filter: blur(8px);
   transition:
     box-shadow 0.25s ease,
     background 0.25s ease;
 }
 
 .site-header.scrolled {
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
-  background: linear-gradient(
-    90deg,
-    rgba(14, 14, 14, 0.98),
-    rgba(22, 22, 22, 0.94)
-  );
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.35);
 }
 
 .header-inner {

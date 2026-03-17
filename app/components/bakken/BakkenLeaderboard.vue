@@ -13,27 +13,12 @@
       <div
         v-for="(entry, i) in visibleLeaderboard"
         :key="entry.name + entry.time"
-        :class="[
-          'leaderboard-item',
-          i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : '',
-        ]"
+        :class="['leaderboard-item', i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : '']"
       >
         <span class="rank">
-          <Icon
-            v-if="i === 0"
-            name="lucide:medal"
-            class="rank-icon rank-gold"
-          />
-          <Icon
-            v-else-if="i === 1"
-            name="lucide:medal"
-            class="rank-icon rank-silver"
-          />
-          <Icon
-            v-else-if="i === 2"
-            name="lucide:medal"
-            class="rank-icon rank-bronze"
-          />
+          <Icon v-if="i === 0" name="lucide:medal" class="rank-icon rank-gold" />
+          <Icon v-else-if="i === 1" name="lucide:medal" class="rank-icon rank-silver" />
+          <Icon v-else-if="i === 2" name="lucide:medal" class="rank-icon rank-bronze" />
           <span v-else>{{ i + 1 }}</span>
         </span>
         <span class="name">{{ entry.name }}</span>
@@ -68,9 +53,7 @@
 import { ref, computed } from "vue";
 const { getBakkenLeaderboard } = useDevData();
 
-const { data: leaderboardData } = await useAsyncData("bakken-leaderboard", () =>
-  getBakkenLeaderboard(),
-);
+const { data: leaderboardData } = await useAsyncData("bakken-leaderboard", () => getBakkenLeaderboard());
 
 const leaderboard = computed(() => leaderboardData.value || []);
 
@@ -79,18 +62,12 @@ const visibleCount = ref(pageSize);
 const fullyExpanded = ref(false);
 
 const visibleLeaderboard = computed(() =>
-  fullyExpanded.value
-    ? leaderboard.value
-    : leaderboard.value.slice(0, visibleCount.value),
+  fullyExpanded.value ? leaderboard.value : leaderboard.value.slice(0, visibleCount.value),
 );
 
 function showMore() {
-  visibleCount.value = Math.min(
-    visibleCount.value + pageSize,
-    leaderboard.value.length,
-  );
-  if (visibleCount.value === leaderboard.value.length)
-    fullyExpanded.value = true;
+  visibleCount.value = Math.min(visibleCount.value + pageSize, leaderboard.value.length);
+  if (visibleCount.value === leaderboard.value.length) fullyExpanded.value = true;
 }
 function collapseOnePage() {
   visibleCount.value = Math.max(pageSize, visibleCount.value - pageSize);
@@ -124,10 +101,14 @@ function collapseOnePage() {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
   align-items: center;
+  max-width: 100%;
 }
 .leaderboard-item:hover {
   background: rgba(255, 255, 255, 0.05);
-  transform: translateX(5px);
+  transform: translateX(5px) scale(1.05);
+  transform-origin: left center;
+  z-index: 1;
+  max-width: calc(95% - 20px);
 }
 .leaderboard-item.gold {
   background: linear-gradient(90deg, rgba(255, 215, 0, 0.1), transparent);
