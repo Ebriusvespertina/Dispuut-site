@@ -3,9 +3,7 @@
     <!-- Hero Section -->
     <section class="about-hero fade-in">
       <h1 class="section-title">Over D.E.V.</h1>
-      <p class="hero-subtitle">
-        Dispuut Ebrius Vespertina - Een hechte vriendengroep voor het leven
-      </p>
+      <p class="hero-subtitle">Dispuut Ebrius Vespertina - Een hechte vriendengroep voor het leven</p>
     </section>
 
     <!-- Main About Content -->
@@ -14,17 +12,14 @@
         <div class="about-text">
           <h2>Wie zijn wij?</h2>
           <p>
-            Dispuut Ebrius Vespertina (D.E.V.) is een gemengd dispuut dat is
-            gelieerd aan Studievereniging Indicium. Ons dispuut vormt een hechte
-            vriendengroep die elk jaar wordt uitgebreid met een nieuwe jaarlaag.
+            Dispuut Ebrius Vespertina (D.E.V.) is een gemengd dispuut dat is gelieerd aan Studievereniging Indicium. Ons
+            dispuut vormt een hechte vriendengroep die elk jaar wordt uitgebreid met een nieuwe jaarlaag.
           </p>
           <p>
-            Wij streven ernaar om het studentenleven volledig te omarmen door
-            elke maand activiteiten te organiseren voor onze leden, meestal
-            onder het genot van een drankje. De vriendschappen die binnen D.E.V.
-            ontstaan, zijn voor het leven. Lid zijn van dit dispuut betekent dat
-            je deel uitmaakt van een gemeenschap die je de rest van je leven zal
-            blijven koesteren.
+            Wij streven ernaar om het studentenleven volledig te omarmen door elke maand activiteiten te organiseren
+            voor onze leden, meestal onder het genot van een drankje. De vriendschappen die binnen D.E.V. ontstaan, zijn
+            voor het leven. Lid zijn van dit dispuut betekent dat je deel uitmaakt van een gemeenschap die je de rest
+            van je leven zal blijven koesteren.
           </p>
         </div>
         <div class="values">
@@ -60,9 +55,8 @@
       <div class="join-content">
         <h2>Wordt onderdeel van D.E.V.</h2>
         <p>
-          Ben je geïnteresseerd om lid te worden van ons dispuut? We zijn altijd
-          op zoek naar nieuwe leden die onze waarden delen en bij willen dragen
-          aan onze hechte gemeenschap.
+          Ben je geïnteresseerd om lid te worden van ons dispuut? We zijn altijd op zoek naar nieuwe leden die onze
+          waarden delen en bij willen dragen aan onze hechte gemeenschap.
         </p>
         <div class="join-requirements">
           <div class="requirement">
@@ -70,26 +64,21 @@
               <Icon name="lucide:graduation-cap" class="requirement-icon" />
               Student
             </h4>
-            <p>
-              Je bent student aan de HU en lid van Studievereniging Indicium
-            </p>
+            <p>Je bent student aan de HU en lid van Studievereniging Indicium</p>
           </div>
           <div class="requirement">
             <h4>
               <Icon name="lucide:handshake" class="requirement-icon" />
               Sociale instelling
             </h4>
-            <p>
-              Je houdt van gezelligheid en wilt actief bijdragen aan de
-              vriendengroep
-            </p>
+            <p>Je houdt van gezelligheid en wilt actief bijdragen aan de vriendengroep</p>
           </div>
           <div class="requirement">
             <h4>
               <Icon name="lucide:beer" class="requirement-icon" />
               Borrel mentaliteit
             </h4>
-            <p>Je waardeert wel een borrel en zeker de studentengezelligheid</p>
+            <p>Je waardeerd een lekkere borrel maar vooral de gezelligheid van het studentenleven</p>
           </div>
         </div>
         <div class="cta-section">
@@ -112,11 +101,7 @@
 .about-hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: radial-gradient(
-    circle at center,
-    rgba(43, 76, 140, 0.2),
-    transparent
-  );
+  background: radial-gradient(circle at center, rgba(43, 76, 140, 0.2), transparent);
   margin: 0 auto 4rem;
   max-width: 1200px;
 }
@@ -144,11 +129,7 @@
 }
 
 .about-content h2 {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -228,11 +209,7 @@
 }
 
 .join-content h2 {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -300,11 +277,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   color: white;
   padding: 1rem 2.5rem;
   border-radius: 50px;

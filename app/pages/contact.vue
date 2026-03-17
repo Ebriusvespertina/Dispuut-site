@@ -4,8 +4,7 @@
     <section class="contact-hero fade-in">
       <h1 class="section-title">Contact</h1>
       <p class="hero-subtitle">
-        Interesse in D.E.V.? Neem contact met ons op en word onderdeel van onze
-        hechte vriendengroep.
+        Interesse in D.E.V.? Neem contact met ons op en word onderdeel van onze hechte vriendengroep.
       </p>
     </section>
 
@@ -16,35 +15,21 @@
           <Icon name="lucide:mail" class="icon" />
           <h3>Email</h3>
           <p>Voor vragen of om lid te worden:</p>
-          <a href="mailto:info@dev-dispuut.nl" class="link-a">
-            info@ebriusvespertina.nl
-          </a>
+          <a href="mailto:info@dev-dispuut.nl" class="link-a"> info@ebriusvespertina.nl </a>
         </div>
 
         <div class="info-item">
           <Icon name="lucide:map-pin" class="icon" />
           <h3>Locatie</h3>
           <p>In de Hogeschool Utrecht:</p>
-          <a
-            href="https://maps.app.goo.gl/uxbGNK7vgbF6iucp7"
-            target="_blank"
-            class="link-b"
-          >
-            Bekijk op Google Maps
-          </a>
+          <a href="https://maps.app.goo.gl/uxbGNK7vgbF6iucp7" target="_blank" class="link-b"> Bekijk op Google Maps </a>
         </div>
 
         <div class="info-item">
           <Icon name="lucide:clock-3" class="icon" />
           <h3>Activiteiten</h3>
           <p>Wekelijks en maandelijks:</p>
-          <a
-            href="https://maps.app.goo.gl/QGVp4KAUyu5DYr1dA"
-            target="_blank"
-            class="link-a"
-          >
-            Donderdag avonden
-          </a>
+          <a href="https://maps.app.goo.gl/QGVp4KAUyu5DYr1dA" target="_blank" class="link-a"> Donderdag avonden </a>
         </div>
 
         <div class="info-item">
@@ -52,13 +37,7 @@
           <h3>Social Media</h3>
           <p>Volg ons voor updates en foto's:</p>
           <div class="social-links">
-            <a
-              href="https://instagram.com/dispuutebriusvespertina"
-              target="_blank"
-              class="link-b"
-            >
-              Instagram
-            </a>
+            <a href="https://instagram.com/dispuutebriusvespertina" target="_blank" class="link-b"> Instagram </a>
           </div>
         </div>
       </div>
@@ -69,8 +48,8 @@
       <div class="cta-content">
         <h2>Word Lid van D.E.V.</h2>
         <p>
-          Klaar om deel uit te maken van onze vriendenkring? Stuur ons een
-          bericht en ontdek wat D.E.V. voor jou kan betekenen!
+          Klaar om deel uit te maken van onze vriendenkring? Stuur ons een bericht en ontdek wat D.E.V. voor jou kan
+          betekenen!
         </p>
         <a href="mailto:info@ebriusvespertina.nl" class="cta-button">
           Neem contact op
@@ -104,11 +83,7 @@ useHead({
 .contact-hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: radial-gradient(
-    circle at center,
-    rgba(43, 76, 140, 0.2),
-    transparent
-  );
+  background: radial-gradient(circle at center, rgba(43, 76, 140, 0.2), transparent);
   margin: 0 auto 4rem;
   max-width: 1200px;
 }
@@ -127,15 +102,25 @@ useHead({
 
 /* Main Section */
 .contact-main {
-  max-width: 1200px;
+  max-width: 1480px;
   margin: 0 auto 5rem;
   padding: 0 2rem;
 }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 2rem;
+}
+
+@media (max-width: 1480px) {
+  .contact-main {
+    max-width: 800px;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .info-item {
@@ -163,11 +148,7 @@ useHead({
 }
 
 .info-item h3 {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -256,11 +237,7 @@ useHead({
 }
 
 .cta-content h2 {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -282,11 +259,7 @@ useHead({
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   color: white;
   padding: 1rem 2.5rem;
   border-radius: 50px;
