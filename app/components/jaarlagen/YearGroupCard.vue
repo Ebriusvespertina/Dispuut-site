@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="jaarlaag-card"
-    @click="$emit('click')"
-    :style="{ backgroundImage: `url(${backgroundImage})` }"
-  >
+  <div class="jaarlaag-card" @click="$emit('click')" :style="{ backgroundImage: `url(${backgroundImage})` }">
     <div class="card-overlay">
       <h3>Jaarlaag {{ year }}</h3>
       <p class="jaarlaag-nickname" v-if="group.name">"{{ group.name }}"</p>
@@ -20,9 +16,7 @@ const props = defineProps({
   group: Object,
 });
 
-const fallbackImage = computed(
-  () => `https://picsum.photos/400/300?random=${props.year}`,
-);
+const fallbackImage = computed(() => `https://picsum.photos/400/300?random=${props.year}`);
 
 const backgroundImage = ref(fallbackImage.value);
 let resolveRequestId = 0;
@@ -88,7 +82,6 @@ watch(
   left: 0;
   right: 0;
   bottom: 0;
-  backdrop-filter: blur(4px) brightness(0.7);
   z-index: 1;
 }
 
@@ -105,12 +98,7 @@ watch(
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.6),
-    rgba(43, 76, 140, 0.5),
-    rgba(58, 95, 58, 0.5)
-  );
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(43, 76, 140, 0.5), rgba(58, 95, 58, 0.5));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,12 +110,7 @@ watch(
 }
 
 .jaarlaag-card:hover .card-overlay {
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.7),
-    rgba(43, 76, 140, 0.6),
-    rgba(58, 95, 58, 0.6)
-  );
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(43, 76, 140, 0.6), rgba(58, 95, 58, 0.6));
 }
 
 .jaarlaag-card h3 {
@@ -156,7 +139,6 @@ watch(
   background: rgba(255, 255, 255, 0.2);
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 

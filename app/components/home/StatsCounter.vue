@@ -50,11 +50,8 @@ function formatStatValue(value) {
   for (const unit of units) {
     if (value >= unit.threshold) {
       const scaled = value / unit.threshold;
-      const display =
-        scaled >= 100 ? Math.floor(scaled) : Math.floor(scaled * 10) / 10;
-      const normalized = Number.isInteger(display)
-        ? String(display)
-        : String(display).replace(/\.0$/, "");
+      const display = scaled >= 100 ? Math.floor(scaled) : Math.floor(scaled * 10) / 10;
+      const normalized = Number.isInteger(display) ? String(display) : String(display).replace(/\.0$/, "");
 
       return `${normalized}${unit.suffix}`;
     }
@@ -67,19 +64,35 @@ function formatStatValue(value) {
 <style scoped>
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 2rem;
   margin: 3rem 0;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 400px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 260px;
+  }
+}
+
 .stat-card {
   background: rgba(255, 255, 255, 0.05);
   padding: 2rem 0;
   border-radius: 15px;
   text-align: center;
-  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
@@ -90,11 +103,7 @@ function formatStatValue(value) {
 .stat-number {
   font-size: 3rem;
   font-weight: bold;
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

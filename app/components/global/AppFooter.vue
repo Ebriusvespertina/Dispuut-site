@@ -4,8 +4,7 @@
       <div class="footer-section">
         <h3>Dispuut Ebrius Vespertina</h3>
         <p>
-          Een vrienden dispuut voor HBO-ICT studenten die graag samenkomen voor
-          borrels, activiteiten en gezelligheid.
+          Een vrienden dispuut voor HBO-ICT studenten die graag samenkomen voor borrels, activiteiten en gezelligheid.
         </p>
       </div>
 
@@ -53,8 +52,7 @@
     <div class="footer-bottom">
       <div class="footer-bottom-content">
         <span>
-          &copy; {{ new Date().getFullYear() }} D.E.V. Dispuut Ebrius
-          Vespertina. Alle rechten voorbehouden.
+          &copy; {{ new Date().getFullYear() }} D.E.V. Dispuut Ebrius Vespertina. Alle rechten voorbehouden.
         </span>
       </div>
     </div>
@@ -62,9 +60,8 @@
 </template>
 
 <script setup>
-const { data: siteNavigation } = await useAsyncData(
-  "site-navigation-footer",
-  () => queryCollection("siteNavigation").first(),
+const { data: siteNavigation } = await useAsyncData("site-navigation-footer", () =>
+  queryCollection("siteNavigation").first(),
 );
 
 const navItems = computed(() => siteNavigation.value?.footerNav || []);
@@ -76,12 +73,7 @@ const navItems = computed(() => siteNavigation.value?.footerNav || []);
   color: var(--text-light);
   margin-top: auto;
   border-top: 3px solid;
-  border-image: linear-gradient(
-      90deg,
-      var(--primary-blue),
-      var(--primary-green)
-    )
-    1;
+  border-image: linear-gradient(90deg, var(--primary-blue), var(--primary-green)) 1;
   font-family: "Georgia", serif;
 }
 
@@ -179,7 +171,6 @@ const navItems = computed(() => siteNavigation.value?.footerNav || []);
   width: 45px;
   height: 45px;
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   color: #ccc;

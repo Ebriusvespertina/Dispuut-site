@@ -36,7 +36,6 @@ const fullName = computed(() => {
 .member-card {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
-  backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
   overflow: hidden;
@@ -54,11 +53,7 @@ const fullName = computed(() => {
 }
 
 .member-name {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

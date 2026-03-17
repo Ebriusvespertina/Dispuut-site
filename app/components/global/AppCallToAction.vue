@@ -55,7 +55,6 @@ const isInternalLink = computed(() => props.link.startsWith("/"));
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: border-color 0.3s ease;
 }

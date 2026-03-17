@@ -82,7 +82,6 @@ function collapseOnePage() {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
   overflow: hidden;
-  backdrop-filter: blur(10px);
 }
 .leaderboard-header {
   display: grid;

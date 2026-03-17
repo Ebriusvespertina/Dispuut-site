@@ -19,7 +19,6 @@ defineProps({
   background: rgba(255, 255, 255, 0.05);
   padding: 2.5rem 1rem;
   border-radius: 20px;
-  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;

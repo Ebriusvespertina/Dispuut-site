@@ -6,12 +6,8 @@
       <h1 class="fade-in">{{ title }}</h1>
       <p class="fade-in">{{ subtitle }}</p>
       <div class="cta-buttons">
-        <NuxtLink to="/over" class="cta-button fade-in primary">
-          Ontdek Meer
-        </NuxtLink>
-        <NuxtLink to="/contact" class="cta-button fade-in secondary">
-          Word Lid
-        </NuxtLink>
+        <NuxtLink to="/over" class="cta-button fade-in primary"> Ontdek Meer </NuxtLink>
+        <NuxtLink to="/contact" class="cta-button fade-in secondary"> Word Lid </NuxtLink>
       </div>
     </div>
     <!-- Scroll indicator -->
@@ -67,17 +63,13 @@ onUnmounted(() => {
 
 <style scoped>
 .hero {
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: min(100vh, 900px);
+  min-height: min(100svh, 900px);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  background: radial-gradient(
-    circle at center,
-    rgba(43, 76, 140, 0.2),
-    transparent
-  );
+  background: radial-gradient(circle at center, rgba(43, 76, 140, 0.2), transparent);
   overflow: hidden;
 }
 .hero-content {
@@ -113,14 +105,11 @@ onUnmounted(() => {
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: glow 3s ease-in-out infinite;
+  max-width: 15ch;
 }
 @keyframes glow {
   0%,
@@ -155,11 +144,7 @@ onUnmounted(() => {
   overflow: hidden;
 }
 .cta-button.primary {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   box-shadow: 0 5px 20px rgba(43, 76, 140, 0.4);
 }
 .cta-button.secondary {
