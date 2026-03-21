@@ -4,9 +4,8 @@
     <section class="activities-hero fade-in">
       <h1 class="section-title">Onze Activiteiten</h1>
       <p class="hero-subtitle">
-        Bij D.E.V. organiseren we het hele jaar door diverse activiteiten waar
-        onze leden samen kunnen genieten, nieuwe herinneringen kunnen maken en
-        onze vriendschappen kunnen versterken.
+        Bij D.E.V. organiseren we het hele jaar door diverse activiteiten waar onze leden samen kunnen genieten, nieuwe
+        herinneringen kunnen maken en onze vriendschappen kunnen versterken.
       </p>
     </section>
 
@@ -40,7 +39,7 @@
         />
         <ActivityCard
           title="Feesten & Tradities"
-          description="Van cantussen tot karaoke-avonden, van awards ceremonies tot onze jaarlijkse verjaardag - we hebben een boel tradities die ons verbinden en waar we naar uitkijken."
+          description="Van cantussen tot karaoke-avonden, van award-ceremonies tot onze jaarlijkse verjaardag - we hebben een boel tradities die ons verbinden en waar we naar uitkijken."
           icon="lucide:party-popper"
         />
       </div>
@@ -66,11 +65,7 @@ useHead({
 .activities-hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: radial-gradient(
-    circle at center,
-    rgba(43, 76, 140, 0.2),
-    transparent
-  );
+  background: radial-gradient(circle at center, rgba(43, 76, 140, 0.2), transparent);
   margin: 0 auto 4rem;
   max-width: 1200px;
 }
