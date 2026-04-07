@@ -23,7 +23,7 @@ members:
     tussenvoegsel: ""
     lastName: Nellestijn
     year: 0
-    bakTime: 2.727
+    bakTime: 2.546
   - firstName: Jurgen
     tussenvoegsel: ""
     lastName: Braan
@@ -33,7 +33,7 @@ members:
     tussenvoegsel: ""
     lastName: Alexander
     year: 0
-    bakTime: 0
+    bakTime: 4.384
   - firstName: Maurice
     tussenvoegsel: ""
     lastName: Stoof
@@ -78,7 +78,7 @@ members:
     tussenvoegsel: van den
     lastName: Bremer
     year: 1
-    bakTime: 4.005
+    bakTime: 3.458
   - firstName: Sietse
     tussenvoegsel: ""
     lastName: Neve
@@ -133,7 +133,7 @@ members:
     tussenvoegsel: ""
     lastName: Jager
     year: 3
-    bakTime: 0
+    bakTime: 5.188
   - firstName: Max
     tussenvoegsel: ""
     lastName: Arink
@@ -158,9 +158,9 @@ members:
     tussenvoegsel: ""
     lastName: Jimmink
     year: 4
-    bakTime: 0
+    bakTime: 3.964
   - firstName: Tycho
     tussenvoegsel: ""
     lastName: Bommelé
     year: 4
-    bakTime: 0
+    bakTime: 3.766
