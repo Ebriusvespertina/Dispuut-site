@@ -50,7 +50,6 @@ import AboutJoinCta from "~/components/over/AboutJoinCta.vue";
   padding: 3rem;
   border-radius: 25px;
   text-align: center;
-  backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }

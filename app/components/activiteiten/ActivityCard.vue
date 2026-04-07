@@ -19,7 +19,6 @@ defineProps({
   background: rgba(255, 255, 255, 0.05);
   padding: 2.5rem 1rem;
   border-radius: 20px;
-  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
@@ -34,24 +33,10 @@ defineProps({
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   opacity: 0;
   transition: all 0.3s ease;
   z-index: -1;
-}
-
-.activity-card:hover::before {
-  opacity: 0.05;
-}
-
-.activity-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-  border-color: rgba(43, 76, 140, 0.4);
 }
 
 .activity-icon {
@@ -72,11 +57,7 @@ defineProps({
 }
 
 .activity-card h3 {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

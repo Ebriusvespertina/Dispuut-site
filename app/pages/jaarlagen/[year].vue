@@ -2,13 +2,9 @@
   <div class="year-page page-content" v-if="yearGroup">
     <!-- Hero Section with Back Link -->
     <section class="year-hero fade-in">
-      <NuxtLink to="/jaarlagen" class="back-link">
-        ← Terug naar Jaarlagen
-      </NuxtLink>
+      <NuxtLink to="/jaarlagen" class="back-link"> ← Terug naar Jaarlagen </NuxtLink>
       <h1 class="section-title">Jaarlaag {{ year }}</h1>
-      <h2 class="year-nickname" v-if="yearGroup.name">
-        "{{ yearGroup.name }}"
-      </h2>
+      <h2 class="year-nickname" v-if="yearGroup.name">"{{ yearGroup.name }}"</h2>
       <p class="hero-subtitle" v-if="yearGroup.description">
         {{ yearGroup.description }}
       </p>
@@ -39,10 +35,7 @@
     </section>
 
     <!-- Highlights Section -->
-    <section
-      class="highlights-section fade-in"
-      v-if="yearGroup.highlights && yearGroup.highlights.length > 0"
-    >
+    <section class="highlights-section fade-in" v-if="yearGroup.highlights && yearGroup.highlights.length > 0">
       <div class="highlights-content">
         <h3>Hoogtepunten</h3>
         <ul class="highlights-list">
@@ -70,9 +63,7 @@ const { getYearGroup } = useDevData();
 
 const year = Number(route.params.year);
 
-const { data: yearGroup } = await useAsyncData(`yeargroup-${year}`, () =>
-  getYearGroup(String(year)),
-);
+const { data: yearGroup } = await useAsyncData(`yeargroup-${year}`, () => getYearGroup(String(year)));
 
 if (!yearGroup.value) {
   throw createError({
@@ -87,9 +78,7 @@ const handleImageError = (event) => {
 };
 
 useHead({
-  title: computed(
-    () => `Jaarlaag ${year} - ${yearGroup.value?.name || "D.E.V."} - D.E.V.`,
-  ),
+  title: computed(() => `Jaarlaag ${year} - ${yearGroup.value?.name || "D.E.V."} - D.E.V.`),
 });
 </script>
 
@@ -102,11 +91,7 @@ useHead({
 .year-hero {
   text-align: center;
   padding: 2rem 2rem 4rem;
-  background: radial-gradient(
-    circle at center,
-    rgba(43, 76, 140, 0.2),
-    transparent
-  );
+  background: radial-gradient(circle at center, rgba(43, 76, 140, 0.2), transparent);
   margin: 0 auto 4rem;
   max-width: 1200px;
   position: relative;
@@ -133,11 +118,7 @@ useHead({
 }
 
 .year-nickname {
-  background: linear-gradient(
-    135deg,
-    var(--primary-green),
-    var(--primary-blue)
-  );
+  background: linear-gradient(135deg, var(--primary-green), var(--primary-blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -170,7 +151,6 @@ useHead({
   background: rgba(255, 255, 255, 0.05);
   padding: 2rem;
   border-radius: 25px;
-  backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
@@ -198,11 +178,7 @@ useHead({
 }
 
 .section-subtitle {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -229,7 +205,6 @@ useHead({
   background: rgba(255, 255, 255, 0.05);
   padding: 3rem;
   border-radius: 25px;
-  backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
@@ -241,11 +216,7 @@ useHead({
 }
 
 .highlights-content h3 {
-  background: linear-gradient(
-    135deg,
-    var(--primary-blue),
-    var(--primary-green)
-  );
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
