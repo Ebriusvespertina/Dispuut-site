@@ -18,7 +18,7 @@ members:
     tussenvoegsel: ""
     lastName: Dijk
     year: 0
-    bakTime: 0
+    bakTime: 4.098
   - firstName: Jasper
     tussenvoegsel: ""
     lastName: Nellestijn
@@ -28,7 +28,7 @@ members:
     tussenvoegsel: ""
     lastName: Braan
     year: 0
-    bakTime: 0
+    bakTime: 5.970
   - firstName: Thijs
     tussenvoegsel: ""
     lastName: Alexander
@@ -38,7 +38,7 @@ members:
     tussenvoegsel: ""
     lastName: Stoof
     year: 0
-    bakTime: 0
+    bakTime: 5.846
   - firstName: Daniel
     tussenvoegsel: ""
     lastName: Lankheet
@@ -58,12 +58,12 @@ members:
     tussenvoegsel: ""
     lastName: Siers
     year: 1
-    bakTime: 0
+    bakTime: 7.060
   - firstName: Bas
     tussenvoegsel: van
     lastName: Dijk
     year: 1
-    bakTime: 2.775
+    bakTime: 2.653
   - firstName: Koen
     tussenvoegsel: ""
     lastName: Ravelli
@@ -148,7 +148,7 @@ members:
     tussenvoegsel: ""
     lastName: Schimmel
     year: 4
-    bakTime: 6.795
+    bakTime: 3.927
   - firstName: Pepijn
     tussenvoegsel: van
     lastName: Heeringen
