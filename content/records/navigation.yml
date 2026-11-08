@@ -9,6 +9,8 @@ mainNav:
     label: "Activiteiten"
   # - to: "/fotos"
   #   label: "Fotos"
+  - to: "/partners"
+    label: "Partners"
   - to: "/contact"
     label: "Contact"
 
@@ -23,5 +25,7 @@ footerNav:
     label: "Activiteiten"
   # - to: "/fotos"
   #   label: "Fotos"
+  - to: "/partners"
+    label: "Partners"
   - to: "/contact"
     label: "Contact"

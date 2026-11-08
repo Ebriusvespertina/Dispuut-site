@@ -2,12 +2,14 @@
   <div class="year-page page-content" v-if="yearGroup">
     <!-- Hero Section with Back Link -->
     <section class="year-hero fade-in">
-      <NuxtLink to="/jaarlagen" class="back-link"> ← Terug naar Jaarlagen </NuxtLink>
-      <h1 class="section-title">Jaarlaag {{ year }}</h1>
-      <h2 class="year-nickname" v-if="yearGroup.name">"{{ yearGroup.name }}"</h2>
-      <p class="hero-subtitle" v-if="yearGroup.description">
-        {{ yearGroup.description }}
-      </p>
+      <div class="hero-inner">
+        <NuxtLink to="/jaarlagen" class="back-link"> ← Terug naar Jaarlagen </NuxtLink>
+        <h1 class="section-title">Jaarlaag {{ year }}</h1>
+        <h2 class="year-nickname" v-if="yearGroup.name">"{{ yearGroup.name }}"</h2>
+        <p class="hero-subtitle" v-if="yearGroup.description">
+          {{ yearGroup.description }}
+        </p>
+      </div>
     </section>
 
     <!-- Group Photo Section -->
@@ -90,17 +92,14 @@ useHead({
 /* Hero Section */
 .year-hero {
   text-align: center;
-  padding: 2rem 2rem 4rem;
-  background: radial-gradient(circle at center, rgba(43, 76, 140, 0.2), transparent);
-  margin: 0 auto 4rem;
-  max-width: 1200px;
-  position: relative;
+  padding: calc(var(--header-height) + 2rem) 0 4rem;
+  background: radial-gradient(ellipse 50% 320px at 50% 0%, rgba(43, 76, 140, 0.2), transparent);
+  margin: 0 0 4rem;
 }
 
 .back-link {
-  position: absolute;
-  top: 1rem;
-  left: 2rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
   color: var(--primary-blue);
   text-decoration: none;
   font-weight: 600;
@@ -264,13 +263,11 @@ useHead({
 /* Responsive Design */
 @media (max-width: 768px) {
   .year-hero {
-    padding: 4rem 1rem 3rem;
-    margin: 1rem 1rem 3rem;
+    padding: calc(var(--header-height) + 1.5rem) 0 3rem;
+    margin: 0 0 3rem;
   }
 
   .back-link {
-    position: static;
-    display: inline-block;
     margin-bottom: 2rem;
   }
 
@@ -326,7 +323,7 @@ useHead({
 
 @media (max-width: 480px) {
   .year-hero {
-    padding: 3rem 1rem 2rem;
+    padding: calc(var(--header-height) + 1rem) 0 2rem;
   }
 
   .photo-section {
