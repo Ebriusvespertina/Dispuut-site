@@ -93,7 +93,7 @@ members:
     tussenvoegsel: ""
     lastName: Mohrman
     year: 2
-    bakTime: 0
+    bakTime: 3.361
   - firstName: Wesley
     tussenvoegsel: de
     lastName: Kok
@@ -148,7 +148,7 @@ members:
     tussenvoegsel: ""
     lastName: Schimmel
     year: 4
-    bakTime: 6.795
+    bakTime: 5.76
   - firstName: Pepijn
     tussenvoegsel: van
     lastName: Heeringen
