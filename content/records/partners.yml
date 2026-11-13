@@ -1,0 +1,51 @@
+# Inhoud van de partnerpagina (/partners).
+# Pas hier de teksten aan; de pagina zelf hoeft niet aangepast te worden.
+
+hero:
+  title: "Partners"
+  subtitle: "D.E.V. is op zoek naar partners."
+
+# Wat wij een partner te bieden hebben.
+benefits:
+  title: "Wat wij bieden"
+  intro: "Onze leden zijn HBO-ICT studenten aan de Hogeschool Utrecht."
+  items:
+    - icon: "lucide:megaphone"
+      title: "Zichtbaarheid"
+      description: "Vermelding op deze website."
+    - icon: "lucide:heart-handshake"
+      title: "Meedenken"
+      description: "We denken graag mee over wat er mogelijk is."
+
+# Wat voor partners wij zoeken.
+lookingFor:
+  title: "Wie wij zoeken"
+  intro: "We staan open voor allerlei samenwerkingen."
+  items:
+    - icon: "lucide:building-2"
+      title: "Bedrijven uit de regio Utrecht"
+      description: "Organisaties die studenten kennis laten maken met hun werkveld."
+    - icon: "lucide:briefcase"
+      title: "ICT- en techbedrijven"
+      description: "Partijen die aansluiten bij de studie van onze leden."
+    - icon: "lucide:store"
+      title: "Lokale horeca en winkels"
+      description: "Ondernemers die onze activiteiten leuker maken."
+    - icon: "lucide:sparkles"
+      title: "Een ander goed idee"
+      description: "Heb je een ander voorstel? Laat het ons weten."
+
+partnersSection:
+  title: "Onze partners"
+  # Nog geen partners: zolang items leeg is, toont de pagina de lege staat hieronder.
+  # Zodra er een partner bij komt, vul je hier een item in en verdwijnt de lege staat.
+  #   - name: "Naam van het bedrijf"
+  #     logo: "/partners/naam.svg"
+  #     url: "https://example.com"
+  #     description: "Korte omschrijving van de samenwerking."
+  items: []
+  emptyState:
+    title: "Nog geen partners"
+    text: "We zijn nog op zoek naar onze eerste partners."
+    link: "mailto:info@ebriusvespertina.nl"
+    linkText: "Mail ons"

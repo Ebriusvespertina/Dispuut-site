@@ -2,11 +2,13 @@
   <div class="activities-page page-content">
     <!-- Hero Section -->
     <section class="activities-hero fade-in">
-      <h1 class="section-title">Onze Activiteiten</h1>
-      <p class="hero-subtitle">
-        Bij D.E.V. organiseren we het hele jaar door diverse activiteiten waar onze leden samen kunnen genieten, nieuwe
-        herinneringen kunnen maken en onze vriendschappen kunnen versterken.
-      </p>
+      <div class="hero-inner">
+        <h1 class="section-title">Onze Activiteiten</h1>
+        <p class="hero-subtitle">
+          Bij D.E.V. organiseren we het hele jaar door diverse activiteiten waar onze leden samen kunnen genieten, nieuwe
+          herinneringen kunnen maken en onze vriendschappen kunnen versterken.
+        </p>
+      </div>
     </section>
 
     <!-- Main Content -->
@@ -64,10 +66,9 @@ useHead({
 /* Hero Section */
 .activities-hero {
   text-align: center;
-  padding: 4rem 2rem;
-  background: radial-gradient(circle at center, rgba(43, 76, 140, 0.2), transparent);
-  margin: 0 auto 4rem;
-  max-width: 1200px;
+  padding: calc(var(--header-height) + 3rem) 0 4rem;
+  background: radial-gradient(ellipse 50% 320px at 50% 0%, rgba(43, 76, 140, 0.2), transparent);
+  margin: 0 0 4rem;
 }
 
 .hero-subtitle {
@@ -98,8 +99,8 @@ useHead({
 /* Responsive Design */
 @media (max-width: 768px) {
   .activities-hero {
-    padding: 2rem 1rem 3rem;
-    margin: 1rem 1rem 3rem;
+    padding: calc(var(--header-height) + 1.5rem) 0 3rem;
+    margin: 0 0 3rem;
   }
 
   .hero-subtitle {

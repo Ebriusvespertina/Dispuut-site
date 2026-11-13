@@ -4,3 +4,10 @@ allowBuilds:
   esbuild: true
   sharp: true
   vue-demi: true
+
+# @nuxtjs/mdc (een dependency van @nuxt/content) zet `@nuxtjs/mdc > <pkg>`-entries
+# in vite.optimizeDeps.include. Die kan Vite alleen resolven als @nuxtjs/mdc vanaf
+# de projectroot vindbaar is, wat met pnpm's strikte node_modules niet zo is.
+# Hoisten voorkomt de NUXT_B7002-waarschuwing bij het starten van dev.
+publicHoistPattern:
+  - "@nuxtjs/mdc"

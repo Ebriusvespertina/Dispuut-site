@@ -1,6 +1,12 @@
 import { defineCollection, defineContentConfig } from "@nuxt/content";
 import { z } from "zod";
 
+const partnerItemSchema = z.object({
+  icon: z.string(),
+  title: z.string(),
+  description: z.string(),
+});
+
 export default defineContentConfig({
   collections: {
     yeargroups: defineCollection({
@@ -40,6 +46,45 @@ export default defineContentConfig({
       schema: z.object({
         totalActivities: z.number().default(0),
         totalBakken: z.number().default(0),
+      }),
+    }),
+    partners: defineCollection({
+      type: "data",
+      source: "records/partners.yml",
+      schema: z.object({
+        hero: z.object({
+          title: z.string(),
+          subtitle: z.string(),
+        }),
+        benefits: z.object({
+          title: z.string(),
+          intro: z.string(),
+          items: z.array(partnerItemSchema).default([]),
+        }),
+        lookingFor: z.object({
+          title: z.string(),
+          intro: z.string(),
+          items: z.array(partnerItemSchema).default([]),
+        }),
+        partnersSection: z.object({
+          title: z.string(),
+          emptyState: z.object({
+            title: z.string(),
+            text: z.string(),
+            link: z.string(),
+            linkText: z.string(),
+          }),
+          items: z
+            .array(
+              z.object({
+                name: z.string(),
+                logo: z.string().optional(),
+                url: z.string().optional(),
+                description: z.string().optional(),
+              }),
+            )
+            .default([]),
+        }),
       }),
     }),
     siteNavigation: defineCollection({

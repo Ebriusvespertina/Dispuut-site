@@ -4,6 +4,22 @@
   --dark-bg: #1a1a1a;
   --light-gray: #f5f5f5;
   --text-light: #e0e0e0;
+  /* Hoogte van de fixed header, zodat hero-secties eronder kunnen beginnen. */
+  --header-height: 60px;
+  --content-max-width: 1200px;
+  --content-padding: 2rem;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --header-height: 74px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --content-padding: 1rem;
+  }
 }
 
 body {
@@ -30,6 +46,16 @@ body {
   text-align: center;
   margin-bottom: 3rem;
   position: relative;
+}
+
+/*
+ * Inhoud van een hero-sectie die zelf volle breedte heeft (voor de glow),
+ * maar waarvan de tekst binnen de paginabreedte moet blijven.
+ */
+.hero-inner {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 var(--content-padding);
 }
 
 .fade-in {

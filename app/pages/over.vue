@@ -2,8 +2,10 @@
   <div class="about-page page-content">
     <!-- Hero Section -->
     <section class="about-hero fade-in">
-      <h1 class="section-title">Over D.E.V.</h1>
-      <p class="hero-subtitle">Dispuut Ebrius Vespertina - Een hechte vriendengroep voor het leven</p>
+      <div class="hero-inner">
+        <h1 class="section-title">Over D.E.V.</h1>
+        <p class="hero-subtitle">Dispuut Ebrius Vespertina - Een hechte vriendengroep voor het leven</p>
+      </div>
     </section>
 
     <!-- Main About Content -->
@@ -66,10 +68,9 @@ import AboutJoinSection from "~/components/over/AboutJoinSection.vue";
 /* Hero Section */
 .about-hero {
   text-align: center;
-  padding: 4rem 2rem;
-  background: radial-gradient(circle at center, rgba(43, 76, 140, 0.2), transparent);
-  margin: 0 auto 4rem;
-  max-width: 1200px;
+  padding: calc(var(--header-height) + 3rem) 0 4rem;
+  background: radial-gradient(ellipse 50% 320px at 50% 0%, rgba(43, 76, 140, 0.2), transparent);
+  margin: 0 0 4rem;
 }
 
 .hero-subtitle {
@@ -147,8 +148,8 @@ import AboutJoinSection from "~/components/over/AboutJoinSection.vue";
 /* Responsive Design */
 @media (max-width: 768px) {
   .about-hero {
-    padding: 2rem 1rem 3rem;
-    margin: 1rem 1rem 3rem;
+    padding: calc(var(--header-height) + 1.5rem) 0 3rem;
+    margin: 0 0 3rem;
   }
 
   .hero-subtitle {
